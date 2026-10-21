@@ -1,0 +1,40 @@
+name: Test, analyze and publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Tests (statistics, ClickHouse metrics, planted-effect check)
+        run: pytest -q
+
+      - name: Run the experiment readout
+        run: python -m experiment.analyze
+
+      - name: Execute the notebook
+        run: jupyter execute --inplace notebooks/experiment_analysis.ipynb
+
+      - name: Save reports, notebook and site
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add reports docs notebooks
+          git diff --cached --quiet || git commit -m "Update experiment readout"
+          git push
