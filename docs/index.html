@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quote Flow Experiment</title>
+<style>
+:root { --ink:#1f2933; --muted:#6b7785; --line:#e4e7eb; --bg:#fbfbfa; --card:#fff; --blue:#1f6feb; --bad:#c2410c; --ok:#15803d; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; margin: 0 0 6px; } h2 { font-size: 19px; margin: 36px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+.decision { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); padding: 16px 18px; border-radius: 6px; }
+.decision strong { font-size: 20px; }
+.stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 20px 0; }
+.stats div { background: var(--card); border:1px solid var(--line); border-radius:6px; padding:12px 14px; }
+.stats b { display:block; font-size: 22px; } .stats span { color: var(--muted); font-size: 13px; }
+.good { color: var(--ok); } .bad { color: var(--bad); }
+img { width: 100%; height: auto; background: var(--card); border:1px solid var(--line); border-radius: 6px; padding: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--card); }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); } th { color: var(--muted); font-weight: 600; }
+.scroll { overflow-x: auto; } .note { color: var(--muted); font-size: 14px; }
+a { color: var(--blue); }
+</style></head><body><main>
+<h1>Should every customer get vehicle pre-fill?</h1>
+<p class="sub">A/B test readout for an insurance quote flow. Analysis in ClickHouse SQL and Python. All data is synthetic.
+<a href="https://github.com/nagina0205-analytics/insurance-quote-experiment">Code, notebook and memo</a></p>
+
+<div class="decision"><strong>Fix, then ship.</strong> Pre-fill gets more customers to buy, but 30-day cancellations rise past the agreed margin. The rise comes from wrong-trim vehicle lookups, so add a confirm-your-vehicle step and retest.</div>
+
+<div class="stats">
+<div><b class="good">+0.47 pts</b><span>bind rate (9.3% relative)</span></div>
+<div><b class="bad">+1.35 pts</b><span>30-day cancellations (margin +1.0)</span></div>
+<div><b>+0.36 pts</b><span>policies still active after 30 days</span></div>
+<div><b>+$0.55</b><span>retained commission per user</span></div>
+</div>
+
+<h2>1. The data had to be fixed first</h2>
+<p>The full window failed the sample ratio check (p = 1.8e-07). Treatment Android users were missing for three days
+because of a logging bug. I excluded those days for everyone. The split in the remaining window is healthy (p = 0.58).</p>
+<img src="srm.svg" alt="Share of users in treatment by day; Android drops to about 40% for the first three days">
+
+<h2>2. Pre-fill gets more people to buy</h2>
+<img src="funnel.svg" alt="Funnel conversion by arm">
+<div class="scroll"><table>
+<tr><th>Bind rate</th><th>Control</th><th>Treatment</th><th>Difference, 95% CI</th></tr>
+<tr><td>Raw</td><td>5.02%</td><td>5.49%</td><td>+0.47 pts [+0.26 pts, +0.68 pts]</td></tr>
+<tr><td>CUPED adjusted</td><td></td><td></td><td>+0.47 pts [+0.26 pts, +0.68 pts]</td></tr>
+</table></div>
+<p>Lift by period, to check for a launch-week novelty effect:</p>
+<img src="over_time.svg" alt="Lift by period with 95% intervals">
+
+<h2>3. But the wrong trim gets cancelled</h2>
+<p>Cancellations within 30 days rose +1.35 pts [+0.29 pts, +2.41 pts], past the +1.0 point margin.
+The rise comes from plate lookups that returned the wrong trim. Correct pre-fills cancel like manual entry.</p>
+<img src="cancellations.svg" alt="30-day cancellation rate: manual entry, correct pre-fill, wrong-trim pre-fill">
+<p>After cancellations, retained commission per user moved +$0.55 [+$0.20, +$0.91].</p>
+
+<h2>4. Who it works for</h2>
+<img src="segments.svg" alt="Lift by segment with 95% intervals">
+<p class="note">Segments are corrected for multiple comparisons (Benjamini-Hochberg).</p>
+
+<h2>5. Recommendation</h2>
+<p>Add a one-tap "Is this your vehicle?" step and rerun for two weeks with the same guardrail. If it catches the wrong-trim lookups,
+retained policies would rise about +0.48 pts per user, roughly 16,679 extra active policies a year.
+That figure is a projection. The rerun decides it.</p>
+
+<p class="note">Check on the method: the data is synthetic, so the true lift is known (+0.46 pts).
+The measured interval covers it, and a CI test fails if it ever doesn't.</p>
+</main></body></html>

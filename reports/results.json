@@ -1,0 +1,344 @@
+{
+  "seed": 7,
+  "plan": {
+    "baseline_bind_rate": 0.05,
+    "users_per_arm": 99750,
+    "mde_abs": 0.002734067218727978,
+    "users_per_arm_for_0.3pt": 85197
+  },
+  "srm": {
+    "p_value_full_window": 1.7840664672183148e-07,
+    "control_full": 99734,
+    "treatment_full": 97416,
+    "broken_cells": [
+      {
+        "day": "2026-08-03",
+        "device": "android",
+        "treatment_share": 0.3325,
+        "p_value": 2.0520583536641678e-72
+      },
+      {
+        "day": "2026-08-04",
+        "device": "android",
+        "treatment_share": 0.3428,
+        "p_value": 1.822760535661928e-62
+      },
+      {
+        "day": "2026-08-05",
+        "device": "android",
+        "treatment_share": 0.3419,
+        "p_value": 6.729522667228753e-65
+      }
+    ],
+    "analysis_window_start": "2026-08-06",
+    "p_value_analysis_window": 0.578590058647102,
+    "control_window": 85617,
+    "treatment_window": 85847,
+    "excluded_users": 25686
+  },
+  "primary": {
+    "metric": "bind_rate",
+    "control": 0.0502119906093416,
+    "treatment": 0.05488834787470733,
+    "diff": 0.004676357265365728,
+    "ci_low": 0.00256422512969341,
+    "ci_high": 0.0067884894010380465,
+    "relative": 0.09313228192342814,
+    "p_value": 1.4315392816591876e-05,
+    "n_control": 85617,
+    "n_treatment": 85847,
+    "significant": true
+  },
+  "primary_cuped": {
+    "metric": "bind_rate_cuped",
+    "control": 0.0502119906093416,
+    "treatment": 0.05488834787470733,
+    "diff": 0.004667091462588195,
+    "ci_low": 0.0025604312233713272,
+    "ci_high": 0.0067737517018050634,
+    "relative": 0.09294774825596964,
+    "p_value": 1.4120763679020707e-05,
+    "n_control": 85617,
+    "n_treatment": 85847,
+    "significant": true,
+    "variance_reduction": 0.005185590760222736
+  },
+  "funnel": [
+    {
+      "arm": "control",
+      "users": 85617,
+      "started": 44010,
+      "viewed": 35150,
+      "bound": 4299
+    },
+    {
+      "arm": "treatment",
+      "users": 85847,
+      "started": 47859,
+      "viewed": 38947,
+      "bound": 4712
+    }
+  ],
+  "funnel_steps": {
+    "started": {
+      "metric": "started_rate",
+      "control": 0.5140334279407127,
+      "treatment": 0.5574918168369308,
+      "diff": 0.043458388896218114,
+      "ci_low": 0.03874169739587719,
+      "ci_high": 0.04817508039655904,
+      "relative": 0.08454389643552616,
+      "p_value": 9.183032905262449e-73,
+      "n_control": 85617,
+      "n_treatment": 85847,
+      "significant": true
+    },
+    "viewed": {
+      "metric": "viewed_rate",
+      "control": 0.41054930679654744,
+      "treatment": 0.4536792200076881,
+      "diff": 0.04312991321114068,
+      "ci_low": 0.0384449477891383,
+      "ci_high": 0.04781487863314306,
+      "relative": 0.1050541615760521,
+      "p_value": 1.216027066539731e-72,
+      "n_control": 85617,
+      "n_treatment": 85847,
+      "significant": true
+    },
+    "bound": {
+      "metric": "bound_rate",
+      "control": 0.0502119906093416,
+      "treatment": 0.05488834787470733,
+      "diff": 0.004676357265365728,
+      "ci_low": 0.00256422512969341,
+      "ci_high": 0.0067884894010380465,
+      "relative": 0.09313228192342814,
+      "p_value": 1.4315392816591876e-05,
+      "n_control": 85617,
+      "n_treatment": 85847,
+      "significant": true
+    }
+  },
+  "over_time": [
+    {
+      "period": "Days 4-7",
+      "metric": "bind_rate",
+      "control": 0.05195965115057266,
+      "treatment": 0.058251914444151044,
+      "diff": 0.006292263293578383,
+      "ci_low": 0.0017019288589529454,
+      "ci_high": 0.010882597728203821,
+      "relative": 0.12109902884729114,
+      "p_value": 0.0072146929368883585,
+      "n_control": 19034,
+      "n_treatment": 18935,
+      "significant": true
+    },
+    {
+      "period": "Days 8-14",
+      "metric": "bind_rate",
+      "control": 0.05013407248953029,
+      "treatment": 0.053578377084019274,
+      "diff": 0.003444304594488981,
+      "ci_low": 7.651128100235509e-05,
+      "ci_high": 0.0068120979079756075,
+      "relative": 0.06870187127144457,
+      "p_value": 0.04504595966990188,
+      "n_control": 33191,
+      "n_treatment": 33409,
+      "significant": true
+    },
+    {
+      "period": "Days 15-21",
+      "metric": "bind_rate",
+      "control": 0.04929324389075228,
+      "treatment": 0.054293645345192966,
+      "diff": 0.005000401454440688,
+      "ci_low": 0.0016420461372975378,
+      "ci_high": 0.008358756771583839,
+      "relative": 0.10144192306602882,
+      "p_value": 0.0035243236927918675,
+      "n_control": 33392,
+      "n_treatment": 33503,
+      "significant": true
+    }
+  ],
+  "steady_state": {
+    "metric": "bind_rate",
+    "control": 0.04971238904825556,
+    "treatment": 0.053936513629842184,
+    "diff": 0.004224124581586622,
+    "ci_low": 0.0018460892454074244,
+    "ci_high": 0.00660215991776582,
+    "relative": 0.08497126495945076,
+    "p_value": 0.0004995226037414948,
+    "n_control": 66583,
+    "n_treatment": 66912,
+    "significant": true
+  },
+  "guardrail_cancel_30d": {
+    "metric": "cancel_rate_30d",
+    "control": 0.0642009769713887,
+    "treatment": 0.07767402376910017,
+    "diff": 0.013473046797711469,
+    "ci_low": 0.0028857831976431027,
+    "ci_high": 0.024060310397779835,
+    "relative": 0.20985734849044058,
+    "p_value": 0.013016056306593476,
+    "n_control": 4299,
+    "n_treatment": 4712,
+    "significant": true,
+    "margin": 0.01,
+    "passes": false
+  },
+  "cancellations_by_vehicle_source": [
+    {
+      "arm": "control",
+      "vehicle_mismatch": 0,
+      "policies": 4208,
+      "cancelled_30d": 252,
+      "cancel_rate": 0.0599,
+      "avg_premium": 1623.28
+    },
+    {
+      "arm": "control",
+      "vehicle_mismatch": 1,
+      "policies": 91,
+      "cancelled_30d": 24,
+      "cancel_rate": 0.2637,
+      "avg_premium": 1604.77
+    },
+    {
+      "arm": "treatment",
+      "vehicle_mismatch": 0,
+      "policies": 4139,
+      "cancelled_30d": 233,
+      "cancel_rate": 0.0563,
+      "avg_premium": 1618.66
+    },
+    {
+      "arm": "treatment",
+      "vehicle_mismatch": 1,
+      "policies": 573,
+      "cancelled_30d": 133,
+      "cancel_rate": 0.2321,
+      "avg_premium": 1574.61
+    }
+  ],
+  "retained_policies": {
+    "metric": "retained_policy_rate",
+    "control": 0.046988331756543676,
+    "treatment": 0.05062494903724067,
+    "diff": 0.003636617280696995,
+    "ci_low": 0.0015970402955056964,
+    "ci_high": 0.005676194265888294,
+    "relative": 0.07739404964490049,
+    "p_value": 0.00047517276413220635,
+    "n_control": 85617,
+    "n_treatment": 85847,
+    "significant": true
+  },
+  "retained_commission": {
+    "metric": "retained_commission_per_user",
+    "control": 7.628475069203546,
+    "treatment": 8.183395226391138,
+    "diff": 0.5549201571875919,
+    "ci_low": 0.1980678457924468,
+    "ci_high": 0.9117724685827371,
+    "relative": 0.07274326155011326,
+    "p_value": 0.002305389494945527,
+    "n_control": 85617,
+    "n_treatment": 85847,
+    "significant": true
+  },
+  "segments": [
+    {
+      "segment": "user_type=new",
+      "metric": "bind_rate",
+      "control": 0.04250533191149027,
+      "treatment": 0.04754937820043892,
+      "diff": 0.005044046288948646,
+      "ci_low": 0.002699385672586268,
+      "ci_high": 0.007388706905311024,
+      "relative": 0.11866855432283102,
+      "p_value": 2.4879171359372933e-05,
+      "n_control": 60016,
+      "n_treatment": 60148,
+      "significant": true,
+      "survives_fdr": true
+    },
+    {
+      "segment": "user_type=returning",
+      "metric": "bind_rate",
+      "control": 0.06827858286785672,
+      "treatment": 0.07206506089731118,
+      "diff": 0.0037864780294544625,
+      "ci_low": -0.000634116144664079,
+      "ci_high": 0.008207072203573005,
+      "relative": 0.05545630665449868,
+      "p_value": 0.09321265861545491,
+      "n_control": 25601,
+      "n_treatment": 25699,
+      "significant": false,
+      "survives_fdr": false
+    },
+    {
+      "segment": "device=ios",
+      "metric": "bind_rate",
+      "control": 0.05079248836114453,
+      "treatment": 0.05468911381945879,
+      "diff": 0.0038966254583142623,
+      "ci_low": 0.0007387753890525919,
+      "ci_high": 0.007054475527575933,
+      "relative": 0.07671656939916968,
+      "p_value": 0.01561199858575387,
+      "n_control": 38234,
+      "n_treatment": 38728,
+      "significant": true,
+      "survives_fdr": true
+    },
+    {
+      "segment": "device=android",
+      "metric": "bind_rate",
+      "control": 0.0499985549550591,
+      "treatment": 0.055157759925486084,
+      "diff": 0.005159204970426982,
+      "ci_low": 0.0018274521822010275,
+      "ci_high": 0.008490957758652938,
+      "relative": 0.10318708160794451,
+      "p_value": 0.002403022161166481,
+      "n_control": 34601,
+      "n_treatment": 34356,
+      "significant": true,
+      "survives_fdr": true
+    },
+    {
+      "segment": "device=web",
+      "metric": "bind_rate",
+      "control": 0.04905335628227195,
+      "treatment": 0.054767687847684716,
+      "diff": 0.005714331565412768,
+      "ci_low": 0.00027369146710376924,
+      "ci_high": 0.011154971663721768,
+      "relative": 0.11649216278964274,
+      "p_value": 0.03954514131881877,
+      "n_control": 12782,
+      "n_treatment": 12763,
+      "significant": true,
+      "survives_fdr": true
+    }
+  ],
+  "projection_with_confirm_step": {
+    "assumption": "mismatched vehicles are caught before purchase, so treatment policies cancel at the rate of correctly matched ones",
+    "treatment_retained_rate": 0.051798474703698194,
+    "control_retained_rate": 0.046988331756543676,
+    "diff": 0.004810142947154518,
+    "relative": 0.10236888111024817,
+    "extra_retained_policies_per_year": 16679.170669258292
+  },
+  "true_effect_planted": 0.004630574522931929,
+  "decision": "Fix, then ship",
+  "decision_reason": "Pre-fill gets more customers to buy, but 30-day cancellations rise past the agreed margin. The rise comes from wrong-trim vehicle lookups, so add a confirm-your-vehicle step and retest.",
+  "users_per_day": 9525.777777777777
+}

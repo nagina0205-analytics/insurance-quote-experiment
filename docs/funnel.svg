@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="504pt" height="172.8pt" viewBox="0 0 504 172.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T13:08:37.178040</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 172.8 
+L 504 172.8 
+L 504 0 
+L 0 0 
+L 0 172.8 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 10.8 145 
+L 164.116644 145 
+L 164.116644 24.397656 
+L 10.8 24.397656 
+L 10.8 145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 17.768938 145 
+L 70.035976 145 
+L 70.035976 56.039216 
+L 17.768938 56.039216 
+z
+" clip-path="url(#p4ad1142d5e)" style="fill: #8a94a6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 104.880668 145 
+L 157.147706 145 
+L 157.147706 48.518125 
+L 104.880668 48.518125 
+z
+" clip-path="url(#p4ad1142d5e)" style="fill: #1f6feb"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m73226d1a09" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b7785; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m73226d1a09" x="43.902457" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="43.902457" y="159.598437" transform="rotate(-0 43.902457 159.598437)">control</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m73226d1a09" x="131.014187" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="131.014187" y="159.597656" transform="rotate(-0 131.014187 159.597656)">treatment</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_5">
+    <path d="M 10.8 145 
+L 164.116644 145 
+" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="43.902457" y="53.877107" transform="rotate(-0 43.902457 53.877107)">51.4%</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="131.014187" y="46.356016" transform="rotate(-0 131.014187 46.356016)">55.7%</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="87.458322" y="18.397656" transform="rotate(-0 87.458322 18.397656)">Started a quote</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_6">
+    <path d="M 175.2 145 
+L 328.516644 145 
+L 328.516644 24.397656 
+L 175.2 24.397656 
+L 175.2 145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 182.168938 145 
+L 234.435976 145 
+L 234.435976 57.690365 
+L 182.168938 57.690365 
+z
+" clip-path="url(#p77db322438)" style="fill: #8a94a6"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 269.280668 145 
+L 321.547706 145 
+L 321.547706 48.518125 
+L 269.280668 48.518125 
+z
+" clip-path="url(#p77db322438)" style="fill: #1f6feb"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m73226d1a09" x="208.302457" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="208.302457" y="159.598437" transform="rotate(-0 208.302457 159.598437)">control</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m73226d1a09" x="295.414187" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="295.414187" y="159.597656" transform="rotate(-0 295.414187 159.597656)">treatment</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4"/>
+   <g id="patch_9">
+    <path d="M 175.2 145 
+L 328.516644 145 
+" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="208.302457" y="55.528256" transform="rotate(-0 208.302457 55.528256)">41.1%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="295.414187" y="46.356016" transform="rotate(-0 295.414187 46.356016)">45.4%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="251.858322" y="18.397656" transform="rotate(-0 251.858322 18.397656)">Viewed quotes</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_10">
+    <path d="M 339.6 145 
+L 492.916644 145 
+L 492.916644 24.397656 
+L 339.6 24.397656 
+L 339.6 145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 346.568938 145 
+L 398.835976 145 
+L 398.835976 56.738152 
+L 346.568938 56.738152 
+z
+" clip-path="url(#pd80e067608)" style="fill: #8a94a6"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 433.680668 145 
+L 485.947706 145 
+L 485.947706 48.518125 
+L 433.680668 48.518125 
+z
+" clip-path="url(#pd80e067608)" style="fill: #1f6feb"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m73226d1a09" x="372.702457" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="372.702457" y="159.598437" transform="rotate(-0 372.702457 159.598437)">control</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m73226d1a09" x="459.814187" y="145" style="fill: #6b7785; stroke: #6b7785; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7785" x="459.814187" y="159.597656" transform="rotate(-0 459.814187 159.597656)">treatment</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6"/>
+   <g id="patch_13">
+    <path d="M 339.6 145 
+L 492.916644 145 
+" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="372.702457" y="54.576043" transform="rotate(-0 372.702457 54.576043)">5.0%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="459.814187" y="46.356016" transform="rotate(-0 459.814187 46.356016)">5.5%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1f2933" x="416.258322" y="18.397656" transform="rotate(-0 416.258322 18.397656)">Bought a policy</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4ad1142d5e">
+   <rect x="10.8" y="24.397656" width="153.316644" height="120.602344"/>
+  </clipPath>
+  <clipPath id="p77db322438">
+   <rect x="175.2" y="24.397656" width="153.316644" height="120.602344"/>
+  </clipPath>
+  <clipPath id="pd80e067608">
+   <rect x="339.6" y="24.397656" width="153.316644" height="120.602344"/>
+  </clipPath>
+ </defs>
+</svg>
